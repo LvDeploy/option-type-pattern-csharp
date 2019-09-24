@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Option.Repository.Entity
+namespace Option.Core.ViewModel
 {
-    class Phone
+    public class Phone
     {
+        public Guid Key { get; set; }
+        public int Number { get; set; }
+        public int DDD { get; set; }
+        public int PreFix { get; set; }
     }
 }

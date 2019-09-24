@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 
 namespace Option.Repository.Entity
 {
-    class Phone
+    public class Phone
     {
+        [BsonId]
+        public Guid Key { get; set; }
+        public int Number { get; set; }
+        public int DDD { get; set; }
+        public int PreFix { get; set; }
     }
 }
